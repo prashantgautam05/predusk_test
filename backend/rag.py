@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 import os
 from openai import OpenAI
 from qdrant_client import QdrantClient
@@ -57,3 +59,4 @@ Question: {query}
     )
 
     return resp.choices[0].message.content, citations
+
