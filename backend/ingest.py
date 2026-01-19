@@ -47,3 +47,4 @@ def ingest(text, source="user-upload"):
         collection_name=COLLECTION,
         points=vectors
     )
+
